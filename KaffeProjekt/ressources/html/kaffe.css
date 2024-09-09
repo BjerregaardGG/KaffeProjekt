@@ -1,0 +1,154 @@
+header img{
+    width: 8%;
+    position: absolute;
+    top: 20px; /* placering i toppen */
+    left: 500px; /* placering til venstre */
+}
+
+nav{
+    padding-top: 2em;
+    font-size: 1.5em;
+    color: #f4f4f4;
+}
+
+nav a{
+    color: #f4f4f4;
+    text-decoration: none; /* fjerner underlines */
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+nav a:hover {
+    transform: scale(1.8);
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+body{
+    min-height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'section'
+        'article'
+        'aside'
+        'footer';
+    grid-template-rows: auto auto auto 1fr auto; /* 1fr */
+    grid-template-columns: 1fr;
+
+}
+@media (min-width: 40em){
+    body{
+        width: 100%;
+        margin: 0 auto;
+        grid-template-areas:
+        'header header header'
+        'section article aside'
+        'footer footer footer';
+        grid-template-columns:2fr 3fr 3fr;
+        grid-template-rows: auto auto auto;
+    }
+
+}
+header {
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+    background-color: white;
+}
+
+article {
+    grid-area: article;
+    background-color: white;
+}
+aside {
+    grid-area: aside;
+    background-color: white;
+}
+footer{
+    grid-area: footer;
+}
+body {
+    background-color: white;
+}
+header,
+section,
+article,
+aside,
+footer{
+    background: #f4f4f4;
+    padding: 10em;
+}
+
+header{
+    text-align: center;
+    color: whitesmoke;
+    background-color: #052605;
+    padding: 40px;
+}
+
+footer{
+    background-color: #052605;
+    padding: 10px;
+}
+
+section{
+    width: 80%; /* Øger bredden på sektionen */
+    margin: 0 auto; /* Centrerer sektionen på siden */
+    padding: 50px; /* Tilføjer lidt ekstra plads indeni sektionen */
+    line-height: 1.6;
+}
+
+article{
+    width: 80%; /* Øger bredden på sektionen */
+    margin: 0 auto; /* Centrerer sektionen på siden */
+    padding: 90px; /* Tilføjer lidt ekstra plads indeni sektionen */
+}
+
+aside{
+    width: 80%; /* Øger bredden på sektionen */
+    margin: 0 auto; /* Centrerer sektionen på siden */
+    padding: 90px; /* Tilføjer lidt ekstra plads indeni sektionen */
+}
+
+.order{
+    border-color: #052605;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+}
+
+.included select{ /* select elementerne */
+    display: block;
+    margin-bottom: 2em;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-color: #052605;
+    text-align: center;
+}
+
+.included legend{
+    text-align: center;
+    border-color: #052605;
+}
+
+aside input{
+    font: contextual;
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+    background-color: #052605;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+aside input:hover{
+    transform: scale(1.08);
+}
+
+
+

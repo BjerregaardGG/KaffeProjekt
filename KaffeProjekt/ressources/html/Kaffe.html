@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="kaffe.css" type="text/css">
+</head>
+<body>
+<header>
+<h1>Flat White</h1>
+    <h3> 170 calories</h3>
+    <img src="transparent-coffee-espresso-with-frothy-heart-design-in-glass65f6a91178c483.3229514317106639534947.png" alt="coffee">
+
+    <div class="back"></div>
+    <nav>
+        <a href="#">About</a>
+        <a href="#">Works</a>
+        <a href="#">Partners</a>
+        <a href="#">Price</a>
+        <a href="#">Contacts</a>
+    </nav>
+</header>
+
+<section>
+    <h3> The Flat Whites' history </h3>
+    <p> The Flat White, a popular espresso-based coffee drink,
+        has a history that is often debated between Australia
+        and New Zealand, with both countries claiming its origin.</p>
+
+    <p> A Flat White is made with a double shot of espresso and
+        steamed milk, similar to a latte but with a smaller volume
+        and a velvety microfoam on top. The texture is creamy, and
+        it often has a more concentrated coffee flavor than a latte
+        because of the smaller milk ratio.</p>
+
+</section>
+
+    <article>
+        <form action="/order" method="POST">
+        <fieldset class="order">
+        <legend>Size options</legend>
+            <p>
+                <input type="radio" name="size" id="size_1" value="small" >
+                <label for="size_1">Short - 8 fl oz</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="tall" >
+                <label for="size_2">Tall - 12 fl oz </label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="grande" >
+                <label for="size_3">Grande - 16 fl oz</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_4" value="venti" >
+                <label for="size_4">Venti - 20 fl oz</label>
+            </p>
+        </fieldset>
+    </article>
+
+    <aside>
+        <fieldset class="included">
+            <legend>What's included? </legend>
+            <select id="espresso" name="espresso">
+                <option value="signature"> Signature Espresso Roast</option>
+                <option value="blonde"> Blonde Espresso Roast</option>
+                <option value="decaf"> Decaf Espresso Roast </option>
+            </select>
+
+            <select id="milk" name="milk">
+                <option value="oat"> Oat Milk</option>
+                <option value="regular"> Regular Milk</option>
+                <option value="goat"> Goat Milk </option>
+            </select>
+
+            <select id="temperature" name="temperature">
+                <option value="hot"> Hot Milk</option>
+                <option value="cold"> Cold Milk</option>
+                <option value="room"> Room Temperature Milk </option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Submit order">
+</form>
+    </aside>
+    <footer>
+    </footer>
+</body>
+</html>
